@@ -1,0 +1,8 @@
+{
+  "name": "SkillMetric 3.5",
+  "description": "Aplikasi penilaian assessment dan kompetensi peserta training produk Software dan Hardware dengan evaluasi Teori, Praktek, dan Role-Play.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

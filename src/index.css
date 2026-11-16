@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide app navigation header, main view, and footer when printing modal */
+  header,
+  main,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Reset modal positioning for seamless paper printing */
+  .fixed.inset-0 {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    backdrop-filter: none !important;
+  }
+
+  #printable-report {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: white !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm;
+  }
+}
